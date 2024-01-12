@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>jQuery Detaylı Örnek</title>
+    <style>
+        /* Basit bir CSS stili */
+        .list-item {
+            cursor: pointer;
+            margin: 5px 0;
+            padding: 8px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>jQuery Detaylı Örnek</h1>
+
+<!-- Listeyi Gösteren ve Eleman Ekleyen Bölüm -->
+<div>
+    <h2>Liste</h2>
+    <ul id="myList">
+        <li class="list-item">Öğe 1</li>
+        <li class="list-item">Öğe 2</li>
+        <li class="list-item">Öğe 3</li>
+    </ul>
+    <input type="text" id="newItemText" placeholder="Yeni öğe adı">
+    <button id="addItemBtn">Öğe Ekle</button>
+</div>
+
+<!-- jQuery Kodu -->
+<script>
+$(document).ready(function() {
+    // Öğe ekleme işlemi
+    $("#addItemBtn").click(function() {
+        var newItemText = $("#newItemText").val();
+        if (newItemText !== "") {
+            var newItem = $("<li>").text(newItemText).addClass("list-item");
+            $("#myList").append(newItem);
+            $("#newItemText").val(""); // Giriş kutusunu temizle
+        }
+    });
+
+    // Öğe tıklama işlemi (Öğeyi listeden kaldırma)
+    $("#myList").on("click", ".list-item", function() {
+        $(this).remove();
+    });
+});
+</script>
+
+</body>
+</html>
