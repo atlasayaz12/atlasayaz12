@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hesap Makinesi Denemesi</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #030c20;
+      color: white;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    #calculator {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      max-width: 250px;
+      margin: 20px auto;
+      animation: slideIn 0.5s ease;
+    }
+
+    input {
+      grid-column: span 4;
+      width: 100%;
+      padding: 10px;
+      font-size: 24px;
+      text-align: right;
+      margin-bottom: 8px;
+      background-color: #3d454f;
+      color: white;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.1s;
+      background-color: #9f17e3;
+      color: white;
+      border: none;
+      outline: none;
+    }
+
+    button:hover {
+      background-color: #4fa3d1;
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    #equals {
+      grid-column: span 2;
+    }
+
+    #equals:hover {
+      background-color: #4fa3d1;
+    }
+
+    #equals:active {
+      transform: scale(0.95);
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Hesap Makinesi</h2>
+
+  <div id="calculator">
+    <input type="text" id="display" disabled>
+    <button onclick="appendNumber('1')">1</button>
+    <button onclick="appendNumber('2')">2</button>
+    <button onclick="appendNumber('3')">3</button>
+    <button onclick="setOperator('+')">+</button>
+    <button onclick="appendNumber('4')">4</button>
+    <button onclick="appendNumber('5')">5</button>
+    <button onclick="appendNumber('6')">6</button>
+    <button onclick="setOperator('-')">-</button>
+    <button onclick="appendNumber('7')">7</button>
+    <button onclick="appendNumber('8')">8</button>
+    <button onclick="appendNumber('9')">9</button>
+    <button onclick="setOperator('*')">*</button>
+    <button onclick="appendNumber('0')">0</button>
+    <button onclick="clearDisplay()">C</button>
+    <button onclick="setOperator('/')">/</button>
+    <button id="equals" onclick="calculate()">=</button>
+   
+  </div>
+
+  <script>
+    function appendNumber(number) {
+      document.getElementById('display').value += number;
+    }
+
+    function setOperator(op) {
+      document.getElementById('display').value += op;
+    }
+
+    function clearDisplay() {
+      document.getElementById('display').value = '';
+    }
+
+    function calculate() {
+      const display = document.getElementById('display');
+      try {
+        display.value = eval(display.value);
+      } catch (error) {
+        display.value = 'Error';
+      }
+    }
+  </script>
+
+</body>
+</html>
