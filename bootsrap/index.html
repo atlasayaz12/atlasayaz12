@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap Örnek</title>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="mt-5">Merhaba, Bootstrap!</h1>
+
+    <!-- Grid Sistemi Kullanımı -->
+    <div class="row">
+        <div class="col-md-6">
+            <p>Bu, grid sistemi kullanılarak düzenlenmiş bir sütun.</p>
+        </div>
+        <div class="col-md-6">
+            <p>Diğer bir sütun. Sayfa genişliği medium ekranlarda ikiye bölündü.</p>
+        </div>
+    </div>
+
+    <!-- Stil Şablonları -->
+    <button class="btn btn-primary">Primary Buton</button>
+    <button class="btn btn-secondary">Secondary Buton</button>
+
+    <!-- JavaScript Bileşenleri -->
+    <div class="mt-4">
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Modal Göster
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Bootstrap Modal Başlık</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Modal içeriği buraya gelecek.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                        <button type="button" class="btn btn-primary">Kaydet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JavaScript ve Popper.js (Modal gibi interaktif öğeler için gerekli) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
