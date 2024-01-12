@@ -8,7 +8,7 @@
 */
 if(@$_POST){
 
-    $api_key = "sk-mqCV1jKskIAAr592reS8T3BlbkFJ5V1Y8c@xaYdun3y0VsaQ";
+    $api_key = "key olacak burada";
     $prompt = $_POST['prompt'];
     
     $stop = array(" Human:", " AI:");
