@@ -7,7 +7,6 @@
     <title>yapay zeka işte </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-</head>
     
 <body>
     <style>
@@ -130,5 +129,3 @@ setInterval(() => {
 }, 200);
 
 </script>
-</body>
-</html>
