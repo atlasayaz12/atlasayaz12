@@ -1,10 +1,7 @@
-- 👋 Hi, I’m @atlasayaz12
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
+- 👋 Hi, I’m sultan
+- 👀 I’m interested in  fronted dev ,full stack dev and game dev
+- 🌱 I’m currently learning c,js,php,html,css,phyton ,boostrap ,jquery library vs..
 - 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 📫 How to reach me ... go to the linkldn
 
-<!---
-atlasayaz12/atlasayaz12 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+
