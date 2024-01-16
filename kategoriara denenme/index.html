@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> arayüz deneme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #ecf0f1; /* Arka plan rengi */
+    }
+
+    .kategori-yonetimi {
+      width: 400px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .baslik {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      background-color: #6634db; /* Mavi renk */
+    }
+
+    .kategori-alani {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    .dosya-yukle {
+      margin-top: 20px;
+    }
+
+    .dosya-alani {
+      text-align: left;
+    }
+
+    .dosya-alani label {
+      display: block;
+    }
+
+    .butonlar {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    #iptal-btn {
+      background-color: #e74c3c; /* Kırmızı renk */
+      color: #fff; /* Beyaz renk */
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #kaydet-btn {
+      background-color: #2ecc71; /* Yeşil renk */
+      color: #fff; /* Beyaz renk */
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="kategori-yonetimi">
+  <div class="baslik">KATEGORİ YÖNETİMİ</div>
+
+  <div class="kategori-alani">
+    <label for="kategoriAdi1">KATEGORİ ADI</label>
+    <input type="text" id="kategoriAdi1" name="kategoriAdi1">
+  </div>
+
+  <div class="kategori-alani">
+    <label for="anaKategori">ANA KATEGORİ</label>
+    <select id="anaKategori" name="anaKategori">
+      <option value="1">Seçenek 1</option>
+      <option value="2">Seçenek 2</option>
+      <option value="3">Seçenek 3</option>
+    </select>
+  </div>
+
+  
+
+  <div class="kategori-alani">
+    <label for="klupUyeleri">KLÜP ÜYELERİ</label>
+    <input type="text" id="klupUyeleri" name="klupUyeleri">
+  </div>
+
+  <div class="dosya-yukle">
+    <div class="dosya-alani">
+      <label for="dosyaYukle">DOSYA YÜKLE</label>
+      <input type="file" id="dosyaYukle" name="dosyaYukle" accept=".xls, .csv, .xlsx">
+    </div>
+
+    <div class="dosya-alani">
+      <label>Yüklenecek dosya türü: .xls, .csv, .xlsx</label>
+    </div>
+  </div>
+
+  <div class="butonlar">
+    <button id="iptal-btn">İPTAL ET</button>
+    <button id="kaydet-btn">KAYDET</button>
+  </div>
+</div>
+
+</body>
+</html>
