@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Randevu Oluştur</title>
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 900px;
+      height: 940px;
+      overflow-y: auto;
+    }
+
+    /* Turuncu Renk Stili */
+    .orange-btn {
+      background-color: #ff9800;
+      color: #fff;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .rounded-corner {
+      border-radius: 10px;
+    }
+
+    .header-btn {
+      float: right;
+    }
+
+    .header-title {
+      background-color: #007bff;
+      color: #ffffff;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-radius: 10px 10px 0 0;
+    
+    }
+    
+
+
+  </style>
+</head>
+
+<body>
+
+
+  <div class="container rounded-corner">
+    <div class="header-title">
+      <h2>Randevu Oluştur</h2>
+      <button type="button" class="btn btn-link text-danger header-btn rounded-corner">X</button>
+    </div>
+
+    <button type="button" class="btn btn-primary header-btn rounded-corner orange-btn">Durum Ekle</button>
+
+    <form>
+      <div class="form-group">
+        <label for="tcKimlikNo">TC Kimlik No:</label>
+        <input type="text" class="form-control rounded-corner" id="tcKimlikNo" placeholder="11111111111">
+      </div>
+
+      <div class="form-group">
+        <label for="ad">Ad:</label>
+        <input type="text" class="form-control rounded-corner" id="ad" placeholder="ad">
+      </div>
+
+      <div class="form-group">
+        <label for="soyad">Soyad:</label>
+        <input type="text" class="form-control rounded-corner" id="soyad" placeholder="Soyad">
+      </div>
+
+      <div class="form-group">
+        <label for="talepDurumu">Talep Durumu:</label>
+        <select class="form-control rounded-corner" id="talepDurumu">
+          <option>Kritik</option>
+          <option>Normal</option>
+          <option>Acil</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="talepBasligi">Talep Başlığı:</label>
+        <input type="text" class="form-control rounded-corner" id="talepBasligi" placeholder="Başlık">
+      </div>
+
+      <div class="form-group">
+        <label for="aciklama">Açıklama:</label>
+        <textarea class="form-control rounded-corner" id="aciklama" rows="3"
+          placeholder="bir açıklama yaz"></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="button" class="btn btn-danger rounded-corner">İptal Et</button>
+        <button type="button" class="btn btn-primary rounded-corner">Kaydet</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
