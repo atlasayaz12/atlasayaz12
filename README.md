@@ -1,4 +1,4 @@
-# Merhaba! Ben Dragoob 👋
+# Merhaba! Ben sultan yaşar👋
 
 👨‍💻 Yeni mezun bir geliştiriciyim. Kod yazmayı, düşünmeyi ve yaratıcı çözümler üretmeyi seviyorum.  
 🎯 Yazılım, tasarım ve içerik üretimi alanlarında öğrenmeye ve üretmeye devam ediyorum.  
